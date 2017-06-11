@@ -1,4 +1,5 @@
-# LinksManager v 0.1
+# LinksManager 
+**Version 0.1**
 
 This project can help you storage your URL links when you learn some new technology.
 
