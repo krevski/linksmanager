@@ -5,10 +5,10 @@ This project can help you storage your URL links when you learn some new technol
 **Information about the technology that used in the project:**
 
    - Java 1.8
-   - Spring 4.3.7 RELEASE
+   - Spring 4.1.1 RELEASE
    - Spring MVC
    - JPA/EclipseLink 2.5.0 
-   - JSP
+   - JSP 2.2
    - HTML/CSS
    - Bootstrap 4
 
