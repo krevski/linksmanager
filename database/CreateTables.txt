@@ -1,0 +1,35 @@
+drop table link;
+drop table theme;
+drop table category;
+drop table rating;
+
+CREATE TABLE Theme (
+	id int not null generated always as identity (START WITH 1, INCREMENT BY 1),
+	themeName varchar(50) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Category (
+	id int not null generated always as identity (START WITH 1, INCREMENT BY 1),
+	categoryName varchar(50) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Rating (
+	id int not null generated always as identity (START WITH 1, INCREMENT BY 1),
+	value INT NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Link (
+	id int not null generated always as identity (START WITH 1, INCREMENT BY 1),
+	name varchar(100) NOT NULL,
+	description varchar(200) NOT NULL,
+	url varchar(200) NOT NULL,
+	dateofadd DATE,
+	readnotread varchar(3) NOT NULL,
+	themeId INT constraint theme_fk references theme,
+	categoryId INT constraint category_fk references category,
+	rating INT NOT NULL,
+	PRIMARY KEY (id)
+);

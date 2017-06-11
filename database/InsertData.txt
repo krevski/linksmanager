@@ -1,0 +1,23 @@
+insert into "APP"."CATEGORY" ("CATEGORYNAME") values('Intresting');
+insert into "APP"."CATEGORY" ("CATEGORYNAME") values('Notintresting');
+
+insert into "APP"."RATING" ("VALUE") values(1);
+insert into "APP"."RATING" ("VALUE") values(2);
+insert into "APP"."RATING" ("VALUE") values(3);
+insert into "APP"."RATING" ("VALUE") values(4);
+insert into "APP"."RATING" ("VALUE") values(5);
+
+insert into "APP"."THEME" ("THEMENAME") values('Java Core');
+insert into "APP"."THEME" ("THEMENAME") values('Java SE');
+insert into "APP"."THEME" ("THEMENAME") values('Java EE');
+insert into "APP"."THEME" ("THEMENAME") values('Spring');
+insert into "APP"."THEME" ("THEMENAME") values('Maven');
+insert into "APP"."THEME" ("THEMENAME") values('Other');
+
+insert into "APP"."LINK" ("NAME", "DESCRIPTION", "URL", "DATEOFADD", "READNOTREAD", "THEMEID", "CATEGORYID", "RATING") values('Java', 'About Java', 'http://oracle.com', '2012-09-30', '1', 1, 1, 2);
+insert into "APP"."LINK" ("NAME", "DESCRIPTION", "URL", "DATEOFADD", "READNOTREAD", "THEMEID", "CATEGORYID", "RATING") values('Spring DOCs', 'Spring Documentation', 'http://spring.io/docs', '2012-09-30', '1', 1, 1, 2);
+insert into "APP"."LINK" ("NAME", "DESCRIPTION", "URL", "DATEOFADD", "READNOTREAD", "THEMEID", "CATEGORYID", "RATING") values('Open Source IoC Containers', 'Spring Documentation', 'http://java-source.net/open-source/containers', '2012-09-30', '1', 1, 1, 2);
+
+
+
+
